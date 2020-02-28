@@ -1,0 +1,245 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+}
+@font-face {
+    font-family: "maiandra";
+    src: url("./maiandra-gd.woff") format('woff');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+nav,
+footer
+
+{
+    font-family: maiandra;
+    font-weight: 500;
+}
+
+.bg-dark {
+    /*background-color: #79D0EC!important;*/
+    background: linear-gradient(to right, #79D0EC, #B7E0D2, #CEE7C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.nav-link{
+    font-size: larger;
+}
+
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 3rem;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: black;
+}
+
+.navbar-dark .navbar-brand {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    /*margin-bottom: 2rem;*/
+    margin-bottom: 0px;
+    border-radius: 0.3rem;
+    background: #79D0EC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #79D0EC, #B7E0D2, #CEE7C7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #79D0EC, #B7E0D2, #CEE7C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#presentation {
+    height: 350px;
+    background-color: #B1524E; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#B1524E, #E26B67); /* Standard syntax (must be last) */
+    color: whitesmoke;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+#actividades {
+    color: black;
+    font-size: x-large;
+}
+
+.bg-feria{
+    background: -webkit-linear-gradient(to right, #80D2EA, #A4DADA, #ACDDD7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #80D2EA, #A4DADA, #ACDDD7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-color: #E26B67;
+    border-width: medium;
+    text-decoration: none;
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+}
+
+.bg-feria:hover {
+    background: linear-gradient(#B1524E, #E26B67);
+    color: white;
+    border-color: #79D0EC;
+    border-width: medium;
+}
+
+.bg-feria:hover .fas  {
+    color: white;
+}
+
+.bg-feria:hover .icon-kangaroo  {
+    color: white;
+}
+
+.actividad a {
+    color: #B1524E;
+    text-decoration: none;
+}
+
+.actividad a:active, .actividad a:visited {
+    color: #B1524E;
+    text-decoration: none;
+}
+
+
+.actividad a:hover,
+.actividad a:focus {
+    background: linear-gradient(#B1524E, #E26B67);
+    color: white;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?6japkc');
+    src:  url('../fonts/icomoon.eot?6japkc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6japkc') format('truetype'),
+    url('../fonts/icomoon.woff?6japkc') format('woff'),
+    url('../fonts/icomoon.svg?6japkc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: bolder;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-kangaroo:before {
+    content: "\e900";
+}
+
+#diadematematicas {
+    height: 250px;
+    background-color: #B1524E; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#B1524E, #E26B67); /* Standard syntax (must be last) */
+    color: whitesmoke;
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+#diadematematicas a{
+    color: #ACDDD7;
+}
+
+#anteriores {
+    height: 500px;
+    background-color: #B1524E; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#B1524E, #E26B67); /* Standard syntax (must be last) */
+    color: whitesmoke;
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+.anteriores a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.anteriores a:hover {
+    color: black;
+}
+
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #B1524E;
+}
+
+
+.footer p{
+    color: black;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    body {
+        margin-top: 46px;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+    .jumbotron h3 {
+        font-size: 24px;
+    }
+    .jumbotron h4 {
+        font-size: 18px;
+    }
+    .presentacion p {
+        font-size: 1.1rem;
+    }
+
+    .diadematematicas p{
+        font-size: .9rem;
+    }
+
+    #anteriores {
+        height: 1000px;
+        text-align: center;
+
+    }
+
+
+    /*.logo-footer {*/
+    /*    margin-left: 0px;*/
+    /*    margin-top: 25px;*/
+    /*}*/
+
+    /*.logo-container {*/
+    /*    display:flex!important;*/
+    /*    justify-content:center!important;*/
+    /*}*/
+}
+@media only screen and (max-width: 770px) {
+    /*#patrocinadores {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*#diadematematicas{*/
+    /*    display: none;*/
+    /*}*/
+}
+
