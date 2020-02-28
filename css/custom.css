@@ -217,35 +217,63 @@ footer
     .presentacion p {
         font-size: 1.1rem;
     }
+    .actividad h3{
+        font-size: 18px;
+    }
 
     .diadematematicas p{
         font-size: .9rem;
     }
 
     #anteriores {
-        height: 1000px;
-        text-align: center;
-
+        height: 800px;
     }
 
 
-    /*.logo-footer {*/
-    /*    margin-left: 0px;*/
-    /*    margin-top: 25px;*/
-    /*}*/
-
-    /*.logo-container {*/
-    /*    display:flex!important;*/
-    /*    justify-content:center!important;*/
-    /*}*/
 }
-@media only screen and (max-width: 770px) {
-    /*#patrocinadores {*/
-    /*    display: none;*/
-    /*}*/
+@media (min-width: 768px) and (max-width: 991.98px) {
 
-    /*#diadematematicas{*/
-    /*    display: none;*/
-    /*}*/
+    body {
+        margin-top: 18px;
+    }
+
+    .navbar-brand h4{
+        font-size: 12px;
+    }
+    .navbar a{
+        font-size: 14px;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+    .jumbotron h3 {
+        font-size: 24px;
+    }
+    .jumbotron h4 {
+        font-size: 18px;
+    }
+    .presentacion p {
+        font-size: 1.1rem;
+    }
+    .actividad h4, h5, h3, i{
+        font-size: 16px;
+    }
+
+    #diadematematicas {
+        height: 300px;
+    }
+
+    .anteriores h5 {
+        font-size: 12px;
+    }
+    #anteriores {
+        height: 750px;
+    }
+
+    .footer h4,p {
+        font-size: 12px;
+    }
+
 }
 
